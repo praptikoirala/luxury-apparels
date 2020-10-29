@@ -1,0 +1,235 @@
+.container {
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#sec-one .content a, #sec-two .content .infos div a {
+  display: inline-block;
+  border: 2px solid #D4D4D4;
+  background: #444444;
+  color: #6CC091;
+  border-radius: 35px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #6CC091;
+  color: #444444;
+}
+
+header .container {
+  padding: 1rem;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#navbar h1 .heading {
+  font-size: 3rem;
+  font-family: 'Grandstander', cursive;
+  color: #444444;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+#navbar h1 .heading:hover {
+  cursor: pointer;
+  color: #D4D4D4;
+}
+
+#navbar ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#navbar ul a {
+  color: #444444;
+  font-size: 1.3rem;
+  padding-bottom: 0.2rem;
+}
+
+#navbar ul a:hover {
+  border-bottom: 1px solid #D4D4D4;
+}
+
+#navbar ul a.current {
+  border-bottom: 1px solid #D4D4D4;
+}
+
+#sec-one {
+  background: url("/img/sec-1.jpg") no-repeat center center/cover;
+  height: 83.59vh;
+  position: relative;
+}
+
+#sec-one:before {
+  content: '';
+  position: absolute;
+  background: rgba(108, 192, 145, 0.4);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#sec-one .content {
+  position: relative;
+  color: #000000;
+  padding-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+#sec-one .content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+#sec-one .content .boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+
+#sec-one .content .boxes div {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#sec-one .content .boxes div h2 {
+  margin-bottom: 0.3rem;
+}
+
+#sec-one .content .boxes div p {
+  font-size: 1.3rem;
+}
+
+#sec-one .content .boxes div:not(.last-div) {
+  border-right: 2px solid #444444;
+}
+
+#sec-one .content a {
+  padding: 0.8rem 2rem;
+  font-size: 1.3rem;
+}
+
+#sec-one .content a:hover {
+  background: #6CC091;
+  color: #444444;
+}
+
+#sec-two .content {
+  text-align: center;
+}
+
+#sec-two .content h1 {
+  font-family: 'Grandstander', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#sec-two .content .infos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#sec-two .content .infos div {
+  padding: 1.3rem;
+}
+
+#sec-two .content .infos div img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#sec-two .content .infos div h2 {
+  margin-top: 1rem;
+}
+
+#sec-two .content .infos div p {
+  margin-top: 0.5rem;
+}
+
+#sec-two .content .infos div a {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+#sec-two .content .infos div a:hover {
+  background: #D4D4D4;
+  color: #444444;
+}
+
+#foot {
+  background: #444444;
+  color: #D4D4D4;
+  text-align: center;
+}
+
+#foot .logos {
+  margin-bottom: 1rem;
+}
+
+#foot .logos a {
+  color: #D4D4D4;
+  padding-right: 1rem;
+}
+
+#foot .logos a:hover {
+  color: #6CC091;
+}
+
+#foot p {
+  font-size: 1.2rem;
+}

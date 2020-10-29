@@ -1,0 +1,28 @@
+@import 'variables';
+
+.container{
+    max-width: 1200px;
+    padding:2rem 1rem;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+%button{
+    display: inline-block;
+    border:2px solid $light-color;
+    background: $dark-color;
+    color:$main-color;
+    border-radius:35px;
+    text-align: center;
+    transition: all 0.5s;
+}
