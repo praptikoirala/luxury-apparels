@@ -1,5 +1,19 @@
 @import 'variables';
 
+*{
+    margin:0;
+    padding:0;  
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    color: $dark-color;
+}
+
 .container{
     max-width: 1200px;
     padding:2rem 1rem;
