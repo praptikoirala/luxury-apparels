@@ -1,6 +1,7 @@
 @import 'utility';
 @import 'variables';
 @import 'about';
+@import 'contact';
 
 //Navigation-Bar
 header{
@@ -20,12 +21,12 @@ header{
     h1 .heading{
         font-size: 2.5rem;
         font-family: 'Grenze Gotisch', cursive;
-        color: $light-color;
+        color: $dark-color;
         transition:color 0.3s ease-in;
 
         &:hover{
             cursor: pointer;
-            color:$dark-color;
+            color:$light-color;
         }
     }
 
