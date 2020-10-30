@@ -18,14 +18,14 @@ header{
     align-content: center;
 
     h1 .heading{
-        font-size: 3rem;
-        font-family: 'Grandstander', cursive;
-        color: $dark-color;
+        font-size: 2.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+        color: $light-color;
         transition:color 0.3s ease-in;
 
         &:hover{
             cursor: pointer;
-            color:$light-color;
+            color:$dark-color;
         }
     }
 
@@ -35,16 +35,18 @@ header{
         grid-gap:1rem;
 
         a{
-            color:$dark-color;
+            color:$light-color;
             font-size: 1.3rem;
             padding-bottom:0.2rem;
 
             &:hover{
-                border-bottom:1px solid $light-color;  
+                color:$dark-color;
+                border-bottom:1px solid $dark-color;  
             }
 
             &.current{
-                border-bottom:1px solid $light-color;
+                color:$dark-color;
+                border-bottom:1px solid $dark-color;
             }
         }
     }
@@ -53,13 +55,13 @@ header{
 //Home-pageSection1
 #home-sec1{
     background: url('/img/sec-1.jpg') no-repeat center center/cover;
-    height:83.59vh;
+    height:90vh;
     position: relative;
 
     &:before{
         content: '';
         position: absolute;
-        background: rgba($color: $main-color, $alpha:0.4);
+        background: rgba($color: $dark-color, $alpha:0.7);
         top:0;
         left:0;
         height:100%;
@@ -68,8 +70,8 @@ header{
 
     .content{
         position: relative;
-        color: #000000;
-        padding-top:3.5rem;
+        color: $light-color;
+        padding-top:5rem;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -77,7 +79,7 @@ header{
         z-index:5;
 
         h1{
-            font-size: 2.3rem;
+            font-size: 2.2rem;
             margin-bottom: 3rem;
         }
 
@@ -91,10 +93,11 @@ header{
                 margin-bottom:1.5rem;
 
                 h2{
+                    font-size:1.45rem;
                     margin-bottom: 0.3rem;
                 }
                 p{
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
 
                 &:not(.last-div){
@@ -123,9 +126,8 @@ header{
     .content{
         text-align: center;
 
-        h1{
-            font-family: 'Grandstander', cursive;  
-            font-size:2.5rem;
+        h1{ 
+            font-size:2.2rem;
             margin-bottom: 1rem;
         }
 
@@ -135,6 +137,7 @@ header{
             grid-gap:1.5rem;
 
             div{
+                color:$dark-color;
                 background:$light-color;
                 border-radius:5px;
                 padding:1rem;
@@ -173,7 +176,7 @@ header{
     text-align: center;
     
     .logos{
-        margin-bottom:1rem;
+        margin-bottom:0.3rem;
 
         a{
             color:$light-color;

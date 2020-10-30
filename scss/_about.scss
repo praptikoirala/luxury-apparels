@@ -2,6 +2,7 @@
 
 //About-section
 #about-sec{
+    color:$dark-color;
 
     .center{
         display: flex;
@@ -14,7 +15,7 @@
         }
 
         .line{
-            height:2px;
+            height:1.5px;
             width:75px;
             background: $dark-color;
             margin-bottom: 0.3rem;
