@@ -164,7 +164,7 @@ a {
 }
 
 #contact-form .input-sec .form input {
-  padding: 8px;
+  padding: 10px;
   width: 60%;
   border: 0.1px solid #444444;
   border-radius: 3px;
@@ -340,7 +340,6 @@ header .container {
 
 #home-sec1 {
   background: url("/img/sec-1.jpg") no-repeat center center/cover;
-  height: 90vh;
   position: relative;
 }
 
@@ -357,7 +356,7 @@ header .container {
 #home-sec1 .content {
   position: relative;
   color: #ffff;
-  padding-top: 5rem;
+  padding: 5rem 0rem 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +386,7 @@ header .container {
 
 #home-sec1 .content .boxes div {
   padding: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 #home-sec1 .content .boxes div h2 {
@@ -400,7 +399,7 @@ header .container {
 }
 
 #home-sec1 .content .boxes div:not(.last-div) {
-  border-right: 2px solid #444444;
+  border-right: 2px solid #55C6E6;
 }
 
 #home-sec1 .content a {
