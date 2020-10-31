@@ -510,7 +510,7 @@ header .container {
 }
 
 #home-sec1 .content .boxes div p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #home-sec1 .content .boxes div:not(.last-div) {
@@ -599,4 +599,75 @@ header .container {
 
 #foot p {
   font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  #home-sec1 .content {
+    padding: 3rem 0rem 2rem 0rem;
+  }
+  #home-sec1 .content h1 {
+    margin-bottom: 1.5rem;
+  }
+  #home-sec1 .content .boxes {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem;
+  }
+  #home-sec1 .content .boxes div {
+    margin-bottom: 1rem;
+  }
+  #home-sec1 .content .boxes div:not(.last-div) {
+    border-right: none;
+    border-bottom: 1px solid #55C6E6;
+    margin-bottom: 0rem;
+  }
+  #home-sec2 .content .infos {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar h1 .heading {
+    font-size: 2.2rem;
+  }
+  #home-sec1 .content {
+    padding-top: 1.5rem;
+  }
+  #home-sec1 .content h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  #home-sec1 .content .boxes div {
+    padding: 1.5rem;
+  }
+  #home-sec1 .content .boxes div h2 {
+    font-size: 1.35rem;
+  }
+  #home-sec1 .content .boxes div p {
+    font-size: 1.1rem;
+  }
+  #home-sec1 .content a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  #foot .logos {
+    margin-bottom: 0.1rem;
+  }
+  #foot p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #home-sec2 .content h1 {
+    font-size: 1.9rem;
+  }
+  #home-sec2 .content .infos {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #home-sec2 .content .infos div img {
+    width: 75%;
+  }
 }
