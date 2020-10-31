@@ -53,3 +53,56 @@
     }
 }
         
+//Responsive
+@media(max-width:850px){
+    #about-sec{
+    
+        .collection{
+            grid-gap:2rem;
+    
+            .content1{
+                grid-template-columns: repeat(1,1fr);
+
+                .texts{
+                    padding:1.5rem;
+                }
+
+                .images{
+                    background: $dark-color;
+                    color:$light-color;
+
+                    h2{
+                        padding:0.5rem 0;
+                    }
+                }
+            }
+    
+        }
+   }    
+}
+
+@media(max-width:600px){
+    #about-sec{
+        .collection{
+            margin-top:1.5rem;
+
+            .texts{
+
+                h2{
+                    font-size:1.3rem ;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+            }
+
+            .images{
+
+                h2{
+                    font-size:1.3rem ;
+                }
+            }
+        }
+    }
+}

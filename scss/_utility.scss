@@ -61,3 +61,16 @@ a{
     text-align: center;
     transition: all 0.5s;
 }
+
+@media(max-width:600px){
+    .center{
+    
+        h1{
+            font-size: 1.8rem;
+        }
+    
+        p{
+            font-size: 1.1rem;
+        }
+    }   
+}

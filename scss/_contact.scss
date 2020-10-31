@@ -122,3 +122,86 @@
         }
     }
 }
+
+//Responsive
+@media(max-width:775px){
+    #icons{
+    
+        .icon-content{
+
+            h1{
+                font-size:1.8rem;
+            }
+    
+             .content{
+                grid-template-columns: repeat(1,1fr);
+
+                .box{
+                    padding:1.5rem;
+
+                    &:not(.last-box){
+                        border-bottom:1px dotted $dark-color;
+                    }
+        
+                    h2{
+                        font-size:1.5rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+             }
+        }
+    }
+}
+
+@media(max-width:725px){
+    #contact-form{
+
+        .center{
+    
+            h1{
+                font-size: 1.6rem;
+            }
+        
+            p{
+                font-size: 1.05rem;
+            }
+        } 
+
+        .input-sec{
+            margin-top:1.5rem;
+    
+            .form{
+                
+                input{
+                    width:90%;
+                }
+    
+                textarea{
+                    width:90%;
+                }
+
+                .sub-btn{
+                    padding:0.5rem;
+                    width:20%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    #contact-form{
+
+        .input-sec{
+    
+            .form{
+                
+                .sub-btn{
+                    width:25%;
+                }
+            }
+        }
+    }
+}

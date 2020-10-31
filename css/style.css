@@ -70,6 +70,15 @@ a {
   transition: all 0.5s;
 }
 
+@media (max-width: 600px) {
+  .center h1 {
+    font-size: 1.8rem;
+  }
+  .center p {
+    font-size: 1.1rem;
+  }
+}
+
 #about-sec {
   color: #444444;
 }
@@ -135,6 +144,41 @@ a {
 #about-sec .collection .content1 .images .box img {
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  #about-sec .collection {
+    grid-gap: 2rem;
+  }
+  #about-sec .collection .content1 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #about-sec .collection .content1 .texts {
+    padding: 1.5rem;
+  }
+  #about-sec .collection .content1 .images {
+    background: #444444;
+    color: #ffff;
+  }
+  #about-sec .collection .content1 .images h2 {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-sec .collection {
+    margin-top: 1.5rem;
+  }
+  #about-sec .collection .texts h2 {
+    font-size: 1.3rem;
+  }
+  #about-sec .collection .texts p {
+    font-size: 1rem;
+  }
+  #about-sec .collection .images h2 {
+    font-size: 1.3rem;
+  }
 }
 
 #contact-form {
@@ -279,6 +323,56 @@ a {
   font-size: 1.2rem;
 }
 
+@media (max-width: 775px) {
+  #icons .icon-content h1 {
+    font-size: 1.8rem;
+  }
+  #icons .icon-content .content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #icons .icon-content .content .box {
+    padding: 1.5rem;
+  }
+  #icons .icon-content .content .box:not(.last-box) {
+    border-bottom: 1px dotted #444444;
+  }
+  #icons .icon-content .content .box h2 {
+    font-size: 1.5rem;
+  }
+  #icons .icon-content .content .box p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 725px) {
+  #contact-form .center h1 {
+    font-size: 1.6rem;
+  }
+  #contact-form .center p {
+    font-size: 1.05rem;
+  }
+  #contact-form .input-sec {
+    margin-top: 1.5rem;
+  }
+  #contact-form .input-sec .form input {
+    width: 90%;
+  }
+  #contact-form .input-sec .form textarea {
+    width: 90%;
+  }
+  #contact-form .input-sec .form .sub-btn {
+    padding: 0.5rem;
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-form .input-sec .form .sub-btn {
+    width: 25%;
+  }
+}
+
 #navbar .menu-lines {
   z-index: 5;
   right: 2.5rem;
@@ -297,6 +391,10 @@ a {
 
 #navbar .menu-lines:hover {
   cursor: pointer;
+}
+
+#navbar .menu-lines.rotate {
+  position: fixed;
 }
 
 #navbar .menu-lines.rotate .line {
