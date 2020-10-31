@@ -1,0 +1,120 @@
+@import 'variables';
+
+#navbar{
+    .menu-lines{
+        z-index:5;
+        right:2.5rem;
+        display:none;
+
+        .line{
+            height:2px;
+            width:1.5rem;
+            background:$light-color ;
+
+            &:not(.last-line){
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &:hover{
+            cursor:pointer;
+        }
+
+        &.rotate{
+
+            .line{
+                transition: transform 0.2s ease-in;
+
+                &.l1{
+                    display: none;
+                }
+    
+                &.l2{
+                    transform: rotate(45deg);
+                }
+    
+                &.last-line{
+                    position: relative;
+                    bottom:0.6rem;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }   
+}
+
+@media(max-width:850px){
+
+    #navbar{
+
+        .menu-lines{
+            display:block;
+        } 
+
+        .menu-items{
+            z-index:4;
+            background: $dark-color;
+            position: fixed;
+            top:0;
+            right:0;
+            width:37%;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            transform: translateX(1500px);
+
+            &.show{
+                transition:transform 0.4s ease-in-out;
+                transform: translateX(0px);
+            }
+
+            .menu-item{
+                transform:scale(0);
+
+                &:not(.last-item){
+                    margin-bottom: 2.5rem;
+                }
+
+                &.show{
+                    transition: all 0.3s 0.3s ease-in;
+                    transform:scale(1);
+                }
+            }
+
+            a{
+                
+                &:hover{
+                    color:$main-color;
+                    border-bottom:1px solid $light-color;
+                }
+
+                &.current{
+                    color:$main-color;
+                    border-bottom:1px solid $light-color;
+                }
+                
+            }
+
+        }  
+    }   
+}
+
+@media(max-width:720px){
+    #navbar{
+
+        .menu-items{
+           width:45%;
+        }
+    }
+}
+
+@media(max-width:620px){
+    #navbar{
+
+        .menu-items{
+           width:55%;
+        }
+    }
+}
